@@ -1,0 +1,22 @@
+.section-quest
+    padding: 50px 0 100px
+.quest
+    &__title
+        color: $white
+        font-size: 48px
+        text-align: center
+        font-weight: 400
+        line-height: normal
+        margin: 0 0 100px
+    &__link
+        color: $link
+        position: relative
+        &:hover
+            color: $link
+        &:after
+            content: '' 
+            border-bottom: 1px solid $link
+            position: absolute
+            width: 100%
+            bottom: 8px
+            left: 0
