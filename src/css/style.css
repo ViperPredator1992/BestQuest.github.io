@@ -370,4 +370,10 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
 }
+
+.nav-link {
+  color: #ffffff;
+  font-size: 18px;
+  display: block;
+}
 /*# sourceMappingURL=style.css.map */
