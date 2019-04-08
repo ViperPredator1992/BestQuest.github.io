@@ -9,8 +9,20 @@
     .quest
         &__title
             font-size: 36px
-@media (max-width: 1000px)
-                         
+    .footer
+        & .container-fluid
+            min-height: 200px
+        &-contacts
+            &__phone
+                font-size: 26px
+                line-height: 32px
+            &__email
+                font-size: 26px
+                line-height: 32px
+                &:after
+                    bottom: 3px
+    .copyright
+        margin: 100px 0 15px  
 @media (max-width: 991px)
     .navbar
         min-height: 65px
@@ -38,7 +50,30 @@
         top: -17px
     .quest__title
         font-size: 26px
-        margin: 0 0 50px     
+        margin: 0 0 50px
+@media (max-width: 860px)
+    .footer
+        &-brand .navbar-brand__logo
+            width: 200px
+        &-contacts
+            &__phone
+                font-size: 22px
+            &__email
+                font-size: 22px
+        & .container-fluid
+            min-height: 140px 
+    .copyright
+        margin: 70px 0 15px
+@media (max-width: 768px)
+    .footer 
+        & .container-fluid
+            flex-direction: column-reverse
+        &-brand
+            margin-bottom: 50px    
+    .copyright
+        margin: 30px 0
+    .section-quest
+        padding: 40px 0                                                        
 @media (max-width: 700px)
     .navbar-phone
         font-size: 24px
@@ -62,16 +97,19 @@
         border-right: 7px solid transparent
 @media (max-width: 575px)
     .quest
+        & .container-fluid
+            max-width: 500px
         &-block
-            justify-content: center
             &__image
                 width: 235px
     .grid
         width: 235px
+        margin: auto
+    .grid:last-child
+        margin: 0
 @media (max-width: 516px)
     .quest
         &-block
-            justify-content: center
             &__image
                 width: 200px
     .grid
@@ -79,7 +117,6 @@
 @media (max-width: 446px)
     .quest
         &-block
-            justify-content: center
             &__image
                 width: 170px
     .grid
@@ -94,6 +131,19 @@
         background-color: #000 !important
     .burger-block
         z-index: 40
+    .footer
+        & .container-fluid
+            flex-direction: column
+        &-brand
+            display: none
+        &-contacts
+            &__phone
+                font-size: 18px
+            &__email
+                font-size: 18px        
+    .copyright
+        display: none
+
 @media (max-width: 410px)
     .navbar-phone
         font-size: 18px
@@ -102,7 +152,6 @@
 @media (max-width: 386px)
     .quest
         &-block
-            justify-content: center
             &__image
                 width: 140px
     .grid

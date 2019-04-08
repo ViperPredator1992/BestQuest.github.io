@@ -962,6 +962,23 @@ button:focus {
   .quest__title {
     font-size: 36px;
   }
+  .footer .container-fluid {
+    min-height: 200px;
+  }
+  .footer-contacts__phone {
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .footer-contacts__email {
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .footer-contacts__email:after {
+    bottom: 3px;
+  }
+  .copyright {
+    margin: 100px 0 15px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -1005,6 +1022,42 @@ button:focus {
   }
 }
 
+@media (max-width: 860px) {
+  .footer-brand .navbar-brand__logo {
+    width: 200px;
+  }
+  .footer-contacts__phone {
+    font-size: 22px;
+  }
+  .footer-contacts__email {
+    font-size: 22px;
+  }
+  .footer .container-fluid {
+    min-height: 140px;
+  }
+  .copyright {
+    margin: 70px 0 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer .container-fluid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .footer-brand {
+    margin-bottom: 50px;
+  }
+  .copyright {
+    margin: 30px 0;
+  }
+  .section-quest {
+    padding: 40px 0;
+  }
+}
+
 @media (max-width: 700px) {
   .navbar-phone {
     font-size: 24px;
@@ -1034,25 +1087,22 @@ button:focus {
 }
 
 @media (max-width: 575px) {
-  .quest-block {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  .quest .container-fluid {
+    max-width: 500px;
   }
   .quest-block__image {
     width: 235px;
   }
   .grid {
     width: 235px;
+    margin: auto;
+  }
+  .grid:last-child {
+    margin: 0;
   }
 }
 
 @media (max-width: 516px) {
-  .quest-block {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
   .quest-block__image {
     width: 200px;
   }
@@ -1062,11 +1112,6 @@ button:focus {
 }
 
 @media (max-width: 446px) {
-  .quest-block {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
   .quest-block__image {
     width: 170px;
   }
@@ -1088,6 +1133,24 @@ button:focus {
   .burger-block {
     z-index: 40;
   }
+  .footer .container-fluid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-brand {
+    display: none;
+  }
+  .footer-contacts__phone {
+    font-size: 18px;
+  }
+  .footer-contacts__email {
+    font-size: 18px;
+  }
+  .copyright {
+    display: none;
+  }
 }
 
 @media (max-width: 410px) {
@@ -1100,11 +1163,6 @@ button:focus {
 }
 
 @media (max-width: 386px) {
-  .quest-block {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
   .quest-block__image {
     width: 140px;
   }
