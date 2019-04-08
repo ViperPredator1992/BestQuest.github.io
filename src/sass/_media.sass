@@ -37,10 +37,6 @@
     .quest__title
         font-size: 26px
         margin: 0 0 50px     
-@media (max-width: 767px)
-    .quest
-        &-block
-            justify-content: center
 @media (max-width: 700px)
     .navbar-phone
         font-size: 24px
@@ -48,6 +44,7 @@
         &__title
             display: none
     .selecter
+        display: block !important
         max-width: 300px
         width: 100%
         margin: 41px auto 39px
@@ -60,7 +57,31 @@
     .selecter-selected:after
         border-top: 8px solid $black
         border-left: 7px solid transparent
-        border-right: 7px solid transparent                   
+        border-right: 7px solid transparent
+@media (max-width: 575px)
+    .quest
+        &-block
+            justify-content: center
+            &__image
+                width: 235px
+    .grid
+        width: 235px
+@media (max-width: 516px)
+    .quest
+        &-block
+            justify-content: center
+            &__image
+                width: 200px
+    .grid
+        width: 200px
+@media (max-width: 446px)
+    .quest
+        &-block
+            justify-content: center
+            &__image
+                width: 170px
+    .grid
+        width: 170px                                       
 @media (max-width: 425px)
     .navbar
         min-height: 60px
@@ -75,7 +96,18 @@
     .navbar-phone
         font-size: 18px
     .selecter
-        margin: 20px auto 39px        
+        margin: 20px auto 39px
+@media (max-width: 386px)
+    .quest
+        &-block
+            justify-content: center
+            &__image
+                width: 140px
+    .grid
+        width: 140px
+    .quest
+        & .container-fluid
+            padding: 0 8px                     
 @media (max-width: 375px)
     .selecter
         max-width: 250px
