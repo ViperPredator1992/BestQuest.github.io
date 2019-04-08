@@ -1103,6 +1103,9 @@ button:focus {
 }
 
 @media (max-width: 516px) {
+  .quest .container-fluid {
+    max-width: 440px;
+  }
   .quest-block__image {
     width: 200px;
   }
@@ -1112,6 +1115,9 @@ button:focus {
 }
 
 @media (max-width: 446px) {
+  .quest .container-fluid {
+    max-width: 370px;
+  }
   .quest-block__image {
     width: 170px;
   }
@@ -1171,6 +1177,7 @@ button:focus {
   }
   .quest .container-fluid {
     padding: 0 8px;
+    max-width: 300px;
   }
 }
 
