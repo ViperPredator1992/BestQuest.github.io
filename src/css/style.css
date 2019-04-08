@@ -451,5 +451,13 @@ img {
     position: absolute;
     right: 15px;
   }
+  .navbar-phone {
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
 }
 /*# sourceMappingURL=style.css.map */
