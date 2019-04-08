@@ -1,0 +1,27 @@
+{
+  "name": "BestQuest.github.io",
+  "version": "1.0.0",
+  "description": "BestQuest - лучшие квесты",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ViperPredator1992/BestQuest.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ViperPredator1992/BestQuest.github.io/issues"
+  },
+  "homepage": "https://github.com/ViperPredator1992/BestQuest.github.io#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-clean-css": "^4.0.0"
+  },
+  "dependencies": {
+    "gulp-htmlmin": "^5.0.1"
+  }
+}
