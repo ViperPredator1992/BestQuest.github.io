@@ -1,7 +1,7 @@
 var gulp = require('gulp');
 var cleanCSS = require('gulp-clean-css');
 var htmlmin = require('gulp-htmlmin');
-
+var tinyPNG = require('gulp-tinypng-compress');
 
 gulp.task('default', defaultTask);
 
@@ -35,9 +35,19 @@ gulp.task('htmlmin', function (done) {
 
 gulp.task('fonts', function (done) {
     return gulp.src('src/fonts/**/*')
-        .pipe(htmlmin({
-            collapseWhitespace: true
-        }))
-        .pipe(gulp.dest('dist/'));
+        .pipe(gulp.dest('dist/fonts'));
     done();
 });
+
+gulp.task('tinypng', function (done) {
+    gulp.src('src/img/**/*.{png,jpg,jpeg}')
+        .pipe(tinyPNG({
+            key: 'qUPKaaL8od2fX9kX8tYt8SkaDXCL7khE'
+        }))
+        .pipe(gulp.dest('dist/img/'));
+    done();    
+});
+
+gulp.task('default', gulp.parallel('minify-css', 'move-js', 'fonts', 'htmlmin', 'tinypng', function (done) {
+    done();
+}))
