@@ -1182,10 +1182,10 @@ button:focus {
     width: 140px;
   }
   .grid {
-    width: 140px;
+    padding: 0;
   }
   .quest .container-fluid {
-    padding: 0 8px;
+    padding: 0;
     max-width: 300px;
   }
 }
