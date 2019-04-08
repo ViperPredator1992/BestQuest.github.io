@@ -937,6 +937,24 @@ button:focus {
   .quest__title {
     display: none;
   }
+  .selecter {
+    max-width: 300px;
+    width: 100%;
+    margin: 41px auto 39px;
+  }
+  .selecter-selected {
+    border-radius: 5px;
+  }
+  .selecter-selected,
+  .selecter-item {
+    font-size: 18px;
+    color: #000000;
+  }
+  .selecter-selected:after {
+    border-top: 8px solid #000000;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+  }
 }
 
 @media (max-width: 425px) {
@@ -951,6 +969,25 @@ button:focus {
   }
   .burger-block {
     z-index: 40;
+  }
+}
+
+@media (max-width: 410px) {
+  .navbar-phone {
+    font-size: 18px;
+  }
+  .selecter {
+    margin: 20px auto 39px;
+  }
+}
+
+@media (max-width: 375px) {
+  .selecter {
+    max-width: 250px;
+  }
+  .selecter-selected,
+  .selecter-item {
+    font-size: 14px;
   }
 }
 /*# sourceMappingURL=style.css.map */

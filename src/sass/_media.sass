@@ -46,7 +46,21 @@
         font-size: 24px
     .quest
         &__title
-            display: none    
+            display: none
+    .selecter
+        max-width: 300px
+        width: 100%
+        margin: 41px auto 39px
+    .selecter-selected
+        border-radius: 5px    
+    .selecter-selected,
+    .selecter-item
+        font-size: 18px
+        color: $black
+    .selecter-selected:after
+        border-top: 8px solid $black
+        border-left: 7px solid transparent
+        border-right: 7px solid transparent                   
 @media (max-width: 425px)
     .navbar
         min-height: 60px
@@ -56,4 +70,15 @@
     .navbar, .navbar-expand
         background-color: #000 !important
     .burger-block
-        z-index: 40    
+        z-index: 40
+@media (max-width: 410px)
+    .navbar-phone
+        font-size: 18px
+    .selecter
+        margin: 20px auto 39px        
+@media (max-width: 375px)
+    .selecter
+        max-width: 250px
+    .selecter-selected,
+    .selecter-item    
+        font-size: 14px            
