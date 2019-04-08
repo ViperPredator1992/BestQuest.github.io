@@ -8,13 +8,33 @@
             font-size: 26px 
 @media (max-width: 991px)
     .navbar
+        min-height: 65px
         & .container-fluid
             padding: 0 15px
         &-light .navbar-toggler
             position: absolute
+            top: 15px
             right: 15px
         &-phone
             position: absolute
             top: 70px
             left: 50%
-            transform: translateX(-50%)                        
+            transform: translateX(-50%)
+        &-brand
+            padding: 16px 0
+        &-nav
+            background-color: rgba(0,0,0, .9)
+            position: relative
+            z-index: 20
+        .nav-item
+            margin-right: 0            
+@media (max-width: 425px)
+    .navbar
+        min-height: 60px
+        &-brand
+            &__logo
+                width: 223px
+    .navbar, .navbar-expand
+        background-color: #000 !important
+    .burger-block
+        z-index: 40    

@@ -390,6 +390,83 @@ img {
   color: #ffffff;
 }
 
+button {
+  outline: none;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 8px;
+  width: 32px;
+  height: 32px;
+  background: transparent;
+  border: none;
+}
+
+.burger-block {
+  position: relative;
+}
+
+.burger-block__top, .burger-block__center, .burger-block__bottom {
+  width: 24px;
+  height: 3px;
+  background-color: #ffffff;
+  position: absolute;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.burger-block__top {
+  top: 0;
+}
+
+.burger-block__center {
+  top: 7px;
+}
+
+.burger-block__bottom {
+  top: 14px;
+}
+
+.burger-open .burger-block__top {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 7px;
+}
+
+.burger-open .burger-block__center {
+  opacity: 0;
+}
+
+.burger-open .burger-block__bottom {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 7px;
+}
+
+.burger-block {
+  position: relative;
+  top: -8px;
+  left: -2px;
+}
+
+@media (max-width: 991px) {
+  .burger {
+    display: block;
+  }
+}
+
 .navbar {
   min-height: 100px;
   padding: 0;
@@ -444,11 +521,15 @@ img {
 }
 
 @media (max-width: 991px) {
+  .navbar {
+    min-height: 65px;
+  }
   .navbar .container-fluid {
     padding: 0 15px;
   }
   .navbar-light .navbar-toggler {
     position: absolute;
+    top: 15px;
     right: 15px;
   }
   .navbar-phone {
@@ -458,6 +539,32 @@ img {
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
             transform: translateX(-50%);
+  }
+  .navbar-brand {
+    padding: 16px 0;
+  }
+  .navbar-nav {
+    background-color: rgba(0, 0, 0, 0.9);
+    position: relative;
+    z-index: 20;
+  }
+  .navbar .nav-item {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 425px) {
+  .navbar {
+    min-height: 60px;
+  }
+  .navbar-brand__logo {
+    width: 223px;
+  }
+  .navbar, .navbar-expand {
+    background-color: #000 !important;
+  }
+  .burger-block {
+    z-index: 40;
   }
 }
 /*# sourceMappingURL=style.css.map */

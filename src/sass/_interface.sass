@@ -16,4 +16,50 @@ img
     max-width: 100%        
 .phone
     font-size: 36px
-    color: $white       
+    color: $white
+button
+    outline: none
+    cursor: pointer
+button:focus
+    outline: none
+.burger
+    display: none
+    cursor: pointer
+    position: absolute
+    top: 15px
+    right: 8px
+    width: 32px
+    height: 32px
+    background: transparent
+    border: none
+    &-block
+        position: relative
+        &__top,
+        &__center,
+        &__bottom
+           width: 24px
+           height: 3px
+           background-color: $white
+           position: absolute
+           transition: 0.2s
+        &__top
+            top: 0
+        &__center
+            top: 7px
+        &__bottom
+            top: 14px 
+.burger-open .burger-block__top 
+    transform: rotate(45deg)
+    top: 7px
+.burger-open .burger-block__center
+	opacity: 0
+.burger-open .burger-block__bottom
+    transform: rotate(-45deg)
+    top: 7px
+.burger-block
+    position: relative
+    top: -8px
+    left: -2px            
+@media (max-width: 991px)
+    .burger
+        display: block               
