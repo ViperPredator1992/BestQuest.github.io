@@ -962,6 +962,9 @@ button:focus {
   .quest__title {
     font-size: 36px;
   }
+  .quest__link:after {
+    bottom: 5px;
+  }
   .footer .container-fluid {
     min-height: 200px;
   }
@@ -1031,6 +1034,9 @@ button:focus {
   }
   .footer-contacts__email {
     font-size: 22px;
+  }
+  .footer-contacts__email:after {
+    bottom: 6px;
   }
   .footer .container-fluid {
     min-height: 140px;
@@ -1153,6 +1159,9 @@ button:focus {
   }
   .footer-contacts__email {
     font-size: 18px;
+  }
+  .footer-contacts__email:after {
+    bottom: 8px;
   }
   .copyright {
     display: none;
