@@ -1,2 +1,21 @@
 .section-quest-inner
     padding: 35px 0 38px
+.breadcrumb
+    margin-bottom: 36px
+    &-list
+        padding: 0
+        margin: 0
+        list-style-type: none
+        display: flex
+        &__item.active
+            color: $white
+        &__link
+            color: $white
+            opacity: 0.5
+            &:after
+                content: '/'
+                margin: 0 5px
+.quests
+    &-left
+        &__title
+            margin: 36px 0 25px       

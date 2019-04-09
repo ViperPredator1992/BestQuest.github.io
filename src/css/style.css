@@ -475,17 +475,23 @@ button:focus {
   left: -2px;
 }
 
-@media (max-width: 991px) {
-  .burger {
-    display: block;
-  }
-}
-
 .opacity {
   opacity: .2;
   -webkit-transition: .4s;
   -o-transition: .4s;
   transition: .4s;
+}
+
+.quests-title {
+  font-weight: 700;
+  font-size: 48px;
+  color: #ffffff;
+}
+
+@media (max-width: 991px) {
+  .burger {
+    display: block;
+  }
 }
 
 .navbar {
@@ -878,6 +884,41 @@ button:focus {
   .selecter {
     max-width: 100%;
   }
+}
+
+.section-quest-inner {
+  padding: 35px 0 38px;
+}
+
+.breadcrumb {
+  margin-bottom: 36px;
+}
+
+.breadcrumb-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.breadcrumb-list__item.active {
+  color: #ffffff;
+}
+
+.breadcrumb-list__link {
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+.breadcrumb-list__link:after {
+  content: '/';
+  margin: 0 5px;
+}
+
+.quests-left__title {
+  margin: 36px 0 25px;
 }
 
 .footer .container-fluid {
