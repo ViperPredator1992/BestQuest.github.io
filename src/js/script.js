@@ -865,11 +865,13 @@ $(document).ready(function () {
             $('.burger').addClass('burger-open');
             $('.navbar-light .navbar-brand').addClass('opacity');
             $('.quest').addClass('opacity');
+            $('.quests').addClass('opacity');
         } else {
             $('.burger').removeClass('burger-open');
             $(this).next('.collapse:not(.show)').slideUp();
             $('.navbar-light .navbar-brand').removeClass('opacity');
             $('.quest').removeClass('opacity');
+            $('.quests').removeClass('opacity');
         }
 
     });

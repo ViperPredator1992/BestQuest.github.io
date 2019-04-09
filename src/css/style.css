@@ -1260,6 +1260,9 @@ button:focus {
     width: 100px;
     height: 80px;
   }
+  .quests-block {
+    margin-bottom: 80px;
+  }
 }
 
 @media (max-width: 700px) {
@@ -1303,6 +1306,9 @@ button:focus {
   }
   .grid:last-child {
     margin: 0;
+  }
+  .fancy-box-main-inner {
+    display: none;
   }
 }
 
@@ -1368,6 +1374,11 @@ button:focus {
   }
   .copyright {
     display: none;
+  }
+  .specifications-list__left,
+  .specifications-list__right {
+    font-size: 22px;
+    margin-right: 10px;
   }
 }
 
