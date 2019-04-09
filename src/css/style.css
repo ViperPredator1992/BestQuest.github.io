@@ -971,6 +971,28 @@ button:focus {
   color: #ffffff;
 }
 
+.fancy-box-main {
+  margin-bottom: 20px;
+}
+
+.fancy-box-main a {
+  display: block;
+}
+
+.fancy-box-main-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.fancy-box-main-inner img {
+  width: 138px;
+  height: 97px;
+}
+
 .footer .container-fluid {
   max-width: 1720px;
   min-height: 250px;
@@ -1043,6 +1065,15 @@ button:focus {
   position: absolute;
   left: 0;
   bottom: 2px;
+}
+
+@media (max-width: 1300px) {
+  .specifications-list__right {
+    font-size: 26px;
+  }
+  .specifications-list__left {
+    font-size: 26px;
+  }
 }
 
 @media (max-width: 1170px) {
