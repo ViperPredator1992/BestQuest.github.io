@@ -1005,6 +1005,27 @@ button:focus {
   display: block;
 }
 
+.contact__title {
+  margin: 0 0 25px;
+}
+
+.contact__subtitle {
+  margin: 0 0 100px;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.contact-rating {
+  background: url(../img/rating.png) no-repeat;
+  width: 296px;
+  height: 102px;
+  margin: auto;
+}
+
+.map {
+  margin-bottom: 100px;
+}
+
 .footer .container-fluid {
   max-width: 1720px;
   min-height: 250px;
@@ -1109,6 +1130,9 @@ button:focus {
   .specifications {
     margin-bottom: 30px;
   }
+  .section-quest-inner {
+    padding: 35px 0 55px;
+  }
 }
 
 @media (max-width: 1170px) {
@@ -1194,12 +1218,24 @@ button:focus {
     font-size: 26px;
     margin: 0 0 50px;
   }
-}
-
-@media (max-width: 960px) {
+  .quests-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .quests-left__link {
+    margin: 0 auto 70px;
+    max-width: 300px;
+    height: 65px;
+    font-size: 24px;
+  }
   .fancy-box-main-inner img {
-    width: 60px;
-    height: 40px;
+    width: 100px;
+    height: 80px;
+  }
+  .quests-block {
+    margin-bottom: 80px;
   }
 }
 
@@ -1261,19 +1297,6 @@ button:focus {
   .specifications-list__left,
   .specifications-list__right {
     font-size: 24px;
-  }
-  .quests-left__link {
-    margin: 0 auto 70px;
-    max-width: 300px;
-    height: 65px;
-    font-size: 24px;
-  }
-  .fancy-box-main-inner img {
-    width: 100px;
-    height: 80px;
-  }
-  .quests-block {
-    margin-bottom: 80px;
   }
 }
 
@@ -1351,9 +1374,27 @@ button:focus {
     width: 170px;
     padding: 0;
   }
+  .section-reservation {
+    padding: 0 0 100px;
+  }
 }
 
 @media (max-width: 425px) {
+  .contact__subtitle {
+    font-size: 18px;
+  }
+  .contact-rating {
+    display: none;
+  }
+  .fancy-box-main {
+    margin-bottom: 0;
+  }
+  .quests-title {
+    font-size: 24px;
+  }
+  .reservation__title {
+    margin: 0 0 40px;
+  }
   .navbar {
     min-height: 60px;
   }
