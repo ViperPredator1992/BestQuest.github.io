@@ -993,6 +993,19 @@ button:focus {
   height: 97px;
 }
 
+.section-reservation {
+  padding: 0 0 250px;
+}
+
+.reservation__title {
+  margin: 0 0 65px;
+}
+
+.reservation iframe {
+  display: block;
+  height: 800px;
+}
+
 .footer .container-fluid {
   max-width: 1720px;
   min-height: 250px;
