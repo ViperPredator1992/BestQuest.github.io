@@ -1382,6 +1382,7 @@ button:focus {
 @media (max-width: 425px) {
   .contact__subtitle {
     font-size: 18px;
+    margin: 0 0 25px;
   }
   .contact-rating {
     display: none;

@@ -865,15 +865,33 @@ $(document).ready(function () {
             $('.burger').addClass('burger-open');
             $('.navbar-light .navbar-brand').addClass('opacity');
             $('.quest').addClass('opacity');
+            $('.quests').addClass('opacity');
         } else {
             $('.burger').removeClass('burger-open');
             $(this).next('.collapse:not(.show)').slideUp();
             $('.navbar-light .navbar-brand').removeClass('opacity');
             $('.quest').removeClass('opacity');
+            $('.quests').removeClass('opacity');
         }
 
     });
 
     $("select").selecter();
+
+    $('[data-fancybox="preview"]').fancybox({
+        thumbs: {
+            autoStart: true
+        }
+    });
+
+    var reservation = $('.reservation');
+    var reservationTop = reservation.offset().top;
+    $(window).bind('scroll', function () {
+        var windowTop = $(this).scrollTop();
+        if (windowTop > reservationTop) {
+            $('.map').html('<script charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A45374b4f36193c2c3bb5a22a9bffed35b78e3e041596ce43450258bbf7529fad&amp;width=100%25&amp;height=598&amp;lang=ru_UA&amp;scroll=false"> </script>')
+            $(window).unbind('scroll');
+        } 
+    });
     
 });
