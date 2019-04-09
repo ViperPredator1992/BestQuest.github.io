@@ -1122,13 +1122,18 @@ button:focus {
 
 @media (max-width: 446px) {
   .quest .container-fluid {
-    max-width: 370px;
+    max-width: 350px;
+    padding: 0;
   }
   .quest-block__image {
     width: 170px;
   }
+  .quest-block__link {
+    margin-bottom: 10px;
+  }
   .grid {
     width: 170px;
+    padding: 0;
   }
 }
 
@@ -1177,19 +1182,6 @@ button:focus {
   }
 }
 
-@media (max-width: 386px) {
-  .quest-block__image {
-    width: 140px;
-  }
-  .grid {
-    padding: 0;
-  }
-  .quest .container-fluid {
-    padding: 0;
-    max-width: 300px;
-  }
-}
-
 @media (max-width: 375px) {
   .selecter {
     max-width: 250px;
@@ -1197,6 +1189,24 @@ button:focus {
   .selecter-selected,
   .selecter-item {
     font-size: 14px;
+  }
+}
+
+@media (max-width: 356px) {
+  .quest-block__image {
+    width: 160px;
+  }
+  .grid {
+    width: 160px;
+  }
+}
+
+@media (max-width: 336px) {
+  .quest-block__image {
+    width: 150px;
+  }
+  .grid {
+    width: 150px;
   }
 }
 /*# sourceMappingURL=style.css.map */

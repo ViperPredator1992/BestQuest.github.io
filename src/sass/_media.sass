@@ -124,12 +124,16 @@
 @media (max-width: 446px)
     .quest
         & .container-fluid
-            max-width: 370px
+            max-width: 350px
+            padding: 0
         &-block
             &__image
                 width: 170px
+            &__link
+                margin-bottom: 10px    
     .grid
-        width: 170px                                       
+        width: 170px
+        padding: 0                                       
 @media (max-width: 425px)
     .navbar
         min-height: 60px
@@ -159,22 +163,24 @@
     .navbar-phone
         font-size: 18px
     .selecter
-        margin: 20px auto 39px
-@media (max-width: 386px)
-    .quest
-        &-block
-            &__image
-                width: 140px
-    .grid
-        // width: 140px
-        padding: 0
-    .quest
-        & .container-fluid
-            padding: 0
-            max-width: 300px                     
+        margin: 20px auto 39px                  
 @media (max-width: 375px)
     .selecter
         max-width: 250px
     .selecter-selected,
     .selecter-item    
         font-size: 14px            
+@media (max-width: 356px)
+    .quest
+        &-block
+            &__image
+                width: 160px
+    .grid
+        width: 160px
+@media (max-width: 336px)
+    .quest
+        &-block
+            &__image
+                width: 150px
+    .grid
+        width: 150px               
