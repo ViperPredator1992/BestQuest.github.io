@@ -921,6 +921,47 @@ button:focus {
   margin: 36px 0 25px;
 }
 
+.quests-left__description {
+  font-size: 18px;
+  color: #ffffff;
+  margin: 0 0 29px;
+}
+
+.quests-left__link {
+  max-width: 455px;
+  height: 88px;
+  border: 5px solid #ffffff;
+  border-radius: 5px;
+  color: #ffffff !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.specifications {
+  margin-bottom: 60px;
+}
+
+.specifications-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.specifications-list__left {
+  font-size: 36px;
+  color: #ffffff;
+  opacity: .5;
+}
+
+.specifications-list__right {
+  font-size: 36px;
+  color: #ffffff;
+}
+
 .footer .container-fluid {
   max-width: 1720px;
   min-height: 250px;
