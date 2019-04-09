@@ -1,7 +1,6 @@
 .section-quest-inner
     padding: 35px 0 38px
 .breadcrumb
-    margin-bottom: 36px
     &-list
         padding: 0
         margin: 0
@@ -16,6 +15,8 @@
                 content: '/'
                 margin: 0 5px
 .quests
+    &-block
+        display: flex
     &-left
         &__title
             margin: 36px 0 25px
@@ -30,7 +31,8 @@
             border-radius: 5px
             color: $white !important
             display: flex
-            text-align: center
+            align-items: center
+            justify-content: center
             font-size: 30px
             cursor: pointer    
 .specifications
@@ -43,6 +45,7 @@
             font-size: 36px
             color: $white
             opacity: .5
+            margin-right: 20px
         &__right                
             font-size: 36px
             color: $white   

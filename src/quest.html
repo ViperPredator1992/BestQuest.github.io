@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -43,15 +44,15 @@
         <section class="section-quest-inner quests">
             <div class="container">
                 <div class="quests-block">
-                    <nav class="breadcrumbs">
-                        <ul class="breadcrumb-list">
-                            <li class="breadcrumb-list__item">
-                                <a href="index.html" class="breadcrumb-list__link">Главная</a>
-                            </li>
-                            <li class="breadcrumb-list__item active">Аватария</li>
-                        </ul>
-                    </nav>
                     <div class="col-xl-5 quests-left">
+                        <nav class="breadcrumbs">
+                            <ul class="breadcrumb-list">
+                                <li class="breadcrumb-list__item">
+                                    <a href="index.html" class="breadcrumb-list__link">Главная</a>
+                                </li>
+                                <li class="breadcrumb-list__item active">Аватария</li>
+                            </ul>
+                        </nav>
                         <h1 class="quests-title quests-left__title">Аватария</h1>
                         <p class="quests-left__description">Вы – команда ученых, прибывшая на Пандору! Ваша задача – оказать сопротивление военным с Земли, спасти народ Нави от неминуемой гибели и защитить «сердце планеты» - Мать Эйву!</p>
                         <div class="specifications">
@@ -95,7 +96,33 @@
                         </div>
                         <a class="quests-left__link" data-woq-book-url="https://api-mir-kvestov.ru/api/quests/1465">Забронировать</a>
                     </div>
-                    <div class="col-xl-7 quests-right"></div>
+                    <div class="col-xl-7 quests-right">
+                        <div class="fancy-box-wrapper">
+                            <a data-fancybox-trigger="preview" href="img/quests-inner/quests1.jpg">
+                                <img src="img/quests-inner/quests1.jpg" alt="">
+                            </a>
+                            <a href="img/quests-inner/quests1.jpg" data-fancybox="preview"
+                                data-width="1500" data-height="1000">
+                                <img src="img/quests-inner/quests1.jpg" alt="">
+                            </a>
+
+                            <a href="img/quests-inner/quests1.jpg" data-fancybox="preview"
+                                data-width="1500" data-height="1000">
+                                <img src="img/quests-inner/quests1.jpg" alt="">
+                            </a>
+
+                            <a href="img/quests-inner/quests1.jpg" data-fancybox="preview"
+                                data-width="1500" data-height="1000">
+                                <img src="img/quests-inner/quests1.jpg" alt="">
+                            </a>
+
+                            <a href="img/quests-inner/quests1.jpg" data-fancybox="preview"
+                                data-width="1500" data-height="1000">
+                                <img src="img/quests-inner/quests1.jpg" alt="">
+                            </a>
+                        </div>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -118,6 +145,7 @@
     </div>
     <script src="https://code.jquery.com/jquery.min.js"></script>
     <script src="https://api-mir-kvestov.ru/api/integration.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
 </body>

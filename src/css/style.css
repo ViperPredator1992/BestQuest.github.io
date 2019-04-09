@@ -375,6 +375,7 @@ body {
 .container {
   max-width: 1560px;
   margin: auto;
+  padding: 0 15px;
 }
 
 a {
@@ -890,10 +891,6 @@ button:focus {
   padding: 35px 0 38px;
 }
 
-.breadcrumb {
-  margin-bottom: 36px;
-}
-
 .breadcrumb-list {
   padding: 0;
   margin: 0;
@@ -917,6 +914,12 @@ button:focus {
   margin: 0 5px;
 }
 
+.quests-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .quests-left__title {
   margin: 36px 0 25px;
 }
@@ -936,7 +939,12 @@ button:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: 30px;
   cursor: pointer;
 }
@@ -955,6 +963,7 @@ button:focus {
   font-size: 36px;
   color: #ffffff;
   opacity: .5;
+  margin-right: 20px;
 }
 
 .specifications-list__right {

@@ -875,5 +875,11 @@ $(document).ready(function () {
     });
 
     $("select").selecter();
+
+    $('[data-fancybox="preview"]').fancybox({
+        thumbs: {
+            autoStart: true
+        }
+    });
     
 });
