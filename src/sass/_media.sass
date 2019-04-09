@@ -6,7 +6,24 @@
             &__left
                 font-size: 26px
     .quests-title
-        fz                
+        font-size: 38px
+    .quests
+        &-left
+            &__link
+                max-width: 350px
+                height: 75px
+    .fancy-box-main-inner img
+        width: 120px
+@media (max-width: 1199px)
+    .fancy-box-main-inner img
+        width: 100px
+        height: 80px
+    .quests
+        &-left
+            &__title
+                margin: 19px 0 15px
+    .specifications
+        margin-bottom: 30px                                                               
 @media (max-width: 1170px)
     .navbar
         min-height: 80px
@@ -34,7 +51,12 @@
                 &:after
                     bottom: 3px
     .copyright
-        margin: 100px 0 15px  
+        margin: 100px 0 15px
+    .fancy-box-main-inner img
+        width: 80px
+        height: 60px
+    .quests-block
+        align-items: center              
 @media (max-width: 991px)
     .navbar
         min-height: 65px
@@ -63,7 +85,13 @@
     .quest__title
         font-size: 26px
         margin: 0 0 50px
+@media (max-width: 960px)
+   .fancy-box-main-inner img
+        width: 60px
+        height: 40px         
 @media (max-width: 860px)
+    .section-quest-inner
+        padding: 60px 0 30px
     .footer
         &-brand .navbar-brand__logo
             width: 200px
@@ -87,7 +115,27 @@
     .copyright
         margin: 30px 0
     .section-quest
-        padding: 40px 0                                                        
+        padding: 40px 0
+    .quests-block
+        flex-direction: column
+    .breadcrumbs
+        display: none
+    .quests-left__title
+        margin: 15px 0 50px
+    .quests .container
+        padding: 0
+    .specifications-list__left,
+    .specifications-list__right
+        font-size: 24px
+    .quests-left__link
+        margin: 0 auto 70px
+        max-width: 300px
+        height: 65px
+        font-size: 24px
+    .fancy-box-main-inner img
+        width: 100px
+        height: 80px
+                                                                                            
 @media (max-width: 700px)
     .navbar-phone
         font-size: 24px
