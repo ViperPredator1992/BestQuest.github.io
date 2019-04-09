@@ -372,6 +372,11 @@ body {
   font-weight: 400;
 }
 
+.container {
+  max-width: 1560px;
+  margin: auto;
+}
+
 a {
   text-decoration: none;
 }
