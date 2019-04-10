@@ -495,6 +495,13 @@ button:focus {
   }
 }
 
+@media (max-width: 425px) {
+  .burger {
+    top: 13px;
+    right: 10px;
+  }
+}
+
 .navbar {
   min-height: 100px;
   padding: 0;
@@ -931,8 +938,8 @@ button:focus {
 }
 
 .quests-left__link {
-  max-width: 455px;
-  height: 88px;
+  max-width: 360px;
+  height: 60px;
   border: 5px solid #ffffff;
   border-radius: 5px;
   color: #ffffff !important;
@@ -945,7 +952,7 @@ button:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 30px;
+  font-size: 24px;
   cursor: pointer;
 }
 
@@ -960,14 +967,14 @@ button:focus {
 }
 
 .specifications-list__left {
-  font-size: 36px;
+  font-size: 24px;
   color: #ffffff;
   opacity: .5;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .specifications-list__right {
-  font-size: 36px;
+  font-size: 24px;
   color: #ffffff;
 }
 
@@ -1055,12 +1062,14 @@ button:focus {
   line-height: 63px;
   color: #ffffff;
   font-weight: 400;
+  font-size: 24px;
 }
 
 .footer-contacts__email {
   position: relative;
   text-align: center;
   line-height: 63px;
+  font-size: 24px;
 }
 
 .footer-contacts__email:after {
@@ -1101,18 +1110,8 @@ button:focus {
 }
 
 @media (max-width: 1300px) {
-  .specifications-list__right {
-    font-size: 26px;
-  }
-  .specifications-list__left {
-    font-size: 26px;
-  }
   .quests-title {
     font-size: 38px;
-  }
-  .quests-left__link {
-    max-width: 350px;
-    height: 75px;
   }
   .fancy-box-main-inner img {
     width: 120px;
@@ -1297,6 +1296,9 @@ button:focus {
   .specifications-list__left,
   .specifications-list__right {
     font-size: 24px;
+  }
+  .contact-rating {
+    margin: 0 auto 50px;
   }
 }
 
